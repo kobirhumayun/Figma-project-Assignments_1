@@ -1,0 +1,353 @@
+// Common CSS
+@import 'reset';
+@import 'variable';
+
+body {
+    color: $common-color;
+    background: url("/img/bg_img.jpg");
+    background-size: 100vw;
+    background-repeat:repeat-y;
+}
+
+.layout {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 350px repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    // grid-column-gap: 20px;
+    // grid-row-gap: 5px;
+    gap: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+.shade{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.grid-child__1 {
+    grid-area: 1/1/span 4/2;
+}
+
+.grid-child__2 {
+    // background-color: $column-2-bg;
+    grid-area: 1/2/2/ span 2;
+}
+
+.grid-child__3 {
+    // background-color: $column-2-bg;
+    grid-area: 2/2/3/3;
+}
+
+.grid-child__4 {
+    // background-color: $column-3-bg;
+    grid-area: 2/3/3/4;
+}
+
+.grid-child__5 {
+    // background-color: $column-2-bg;
+    grid-area: 3/2/4/3;
+}
+
+.grid-child__6 {
+    // background-color: $column-3-bg;
+    grid-area: 3/3/4/4;
+}
+
+.grid-child__7 {
+    grid-area: 4/2/5/span 2;
+}
+
+.grid-child__8 {
+    // background-color: $column-2-bg;
+    grid-area: 5/2/6/span 2;
+}
+
+.grid-child__9 {
+    background: rgba(255, 255, 255, 0.4);
+    grid-area: 6/2/7/3;
+}
+
+.grid-child__10 {
+    background: rgba(255, 255, 255, 0.4);
+    grid-area: 6/3/7/4;
+}
+
+.grid-child__11 {
+    background: rgba(255, 255, 255, 0.4);
+    grid-area: 7/2/8/3;
+}
+
+.grid-child__12 {
+    background: rgba(255, 255, 255, 0.4);
+    grid-area: 7/3/8/4;
+}
+
+.grid-child__13 {
+    grid-area: 8/2/9/4;
+}
+
+.grid-child__14 {
+    grid-area: 9/2/10/4;
+}
+
+.grid-child__15 {
+    grid-area: 10/2/11/4;
+}
+
+.grid-child__16 {
+    grid-area: 11/2/12/3;
+    justify-self: right;
+}
+
+.grid-child__17 {
+    grid-area: 11/3/12/4;
+    justify-self: left;
+}
+
+.grid-child__18 {
+    grid-area: 12/2/13/3;
+    justify-self: right;
+}
+
+.grid-child__19 {
+    grid-area: 12/3/13/4;
+    justify-self: left;
+}
+
+.grid-child__20 {
+    grid-area: 13/2/14/3;
+    justify-self: right;
+}
+
+.grid-child__21 {
+    grid-area: 13/3/14/4;
+    justify-self: left;
+}
+
+.grid-child__22 {
+    grid-area: 14/2/15/4;
+}
+
+.grid-child__23 {
+    grid-area: 15/2/16/4;
+}
+
+.grid-child__24 {
+    grid-area: 16/2/17/4;
+}
+
+
+
+
+// Profile CSS
+.profile-container {
+    // display: flex;
+    // flex-direction: column;
+    background-color: $profile-bg;
+
+
+}
+
+.profile-img {
+    img {
+        margin-top: 65px;
+        height: 240px;
+        width: 240px;
+        border-radius: 50%;
+    }
+
+
+}
+
+.profile-name {
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.about-profile {
+    a {
+        color: $common-color;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+
+
+    ul {
+        list-style: none;
+        margin: 100px 0;
+
+        li {
+            border-top: 2px solid $common-color;
+            border-bottom: 2px solid $common-color;
+            margin-top: -2px;
+            line-height: 50px;
+            display: block;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background: $common-color;
+            transition: .5s;
+
+            a {
+                color: $profile-bg;
+                transition: .5s;
+            }
+        }
+
+
+
+    }
+}
+
+.social-link {
+    img {
+        height: 50px;
+        width: auto;
+    }
+}
+
+
+.copyright {
+    padding: 100px 0;
+    font-size: 16px;
+}
+
+
+// column CSS
+
+.common-text {
+    margin: 0 200px;
+
+    h2 {
+        font-size: 24px;
+        margin: 10px;
+
+        span {
+            text-decoration: underline $profile-bg;
+        }
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.contant-img {
+    img {
+        height: 350px;
+        width: 350px;
+        border-radius: 10px;
+    }
+}
+.bio-description{
+    text-align: left;
+    h2 {
+        margin: 30px 0;
+        font-size: 24px;
+
+    }
+    p {
+        margin: 30px 0;
+        font-size: 16px;
+
+    }
+    button{
+        font-size: 16px;
+        background: $common-color;
+        color: $profile-bg;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background: $profile-bg;
+        color: $common-color;
+        transition: 0.5s;
+    }
+}
+
+.work-catagory {
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: 5px;
+
+            a {
+                text-decoration: none;
+                color: $common-color;
+            }
+        }
+
+        li:hover {
+            transition: .5s;
+
+            a {
+                color: $profile-bg;
+                text-decoration: underline;
+                transition: .5s;
+            }
+        }
+    }
+}
+.skill{
+    @extend .bio-description;
+    margin: 30px;
+}
+
+.horizontal-line{
+    margin: 30px;
+}
+
+
+form {
+    .name-mail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        height: 35px;
+    }
+
+    .subject {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+        margin: 20px 0;
+    }
+    input{
+        background: rgba(196, 196, 196, 0.5);
+        border: 1px solid $common-color;
+    }
+
+    input[value="Subject"] {
+        height: 35px;
+    }
+
+    input[value="Your Massage"] {
+        height: 200px;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+        background: $common-color;
+        color: $profile-bg;
+        border: none;
+    }
+    input[type="submit"]:hover {
+        background: $profile-bg;
+        color: $common-color;
+        transition: 0.5s;
+    }
+}
