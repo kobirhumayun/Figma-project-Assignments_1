@@ -4,10 +4,10 @@
 
 body {
     color: $common-color;
-    background: url("img/bg_img.jpg");
+    background-image: url(../img/bg_img.jpg);
     background-size: 100vw;
     background-repeat:repeat-y;
-}
+    }
 
 .layout {
     width: 90%;
@@ -15,9 +15,7 @@ body {
     display: grid;
     align-items: center;
     grid-template-columns: 350px repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
-    // grid-column-gap: 20px;
-    // grid-row-gap: 5px;
+    // grid-template-rows: repeat(5, auto);
     gap: 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -33,27 +31,22 @@ body {
 }
 
 .grid-child__2 {
-    // background-color: $column-2-bg;
     grid-area: 1/2/2/ span 2;
 }
 
 .grid-child__3 {
-    // background-color: $column-2-bg;
     grid-area: 2/2/3/3;
 }
 
 .grid-child__4 {
-    // background-color: $column-3-bg;
     grid-area: 2/3/3/4;
 }
 
 .grid-child__5 {
-    // background-color: $column-2-bg;
     grid-area: 3/2/4/3;
 }
 
 .grid-child__6 {
-    // background-color: $column-3-bg;
     grid-area: 3/3/4/4;
 }
 
@@ -62,7 +55,6 @@ body {
 }
 
 .grid-child__8 {
-    // background-color: $column-2-bg;
     grid-area: 5/2/6/span 2;
 }
 
@@ -145,8 +137,6 @@ body {
 
 // Profile CSS
 .profile-container {
-    // display: flex;
-    // flex-direction: column;
     background-color: $profile-bg;
 
 

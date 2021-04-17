@@ -57,7 +57,7 @@ table {
 
 body {
   color: #fff;
-  background: url("img/bg_img.jpg");
+  background-image: url(../img/bg_img.jpg);
   background-size: 100vw;
   background-repeat: repeat-y;
 }
@@ -72,8 +72,6 @@ body {
           align-items: center;
   -ms-grid-columns: 350px (1fr)[2];
       grid-template-columns: 350px repeat(2, 1fr);
-  -ms-grid-rows: (auto)[5];
-      grid-template-rows: repeat(5, auto);
   gap: 20px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
